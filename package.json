@@ -1,0 +1,24 @@
+{
+  "name": "job-autopilot",
+  "version": "1.0.0",
+  "description": "Automated job application system powered by 6 LLM models",
+  "private": true,
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node src/index.js --run-now",
+    "dashboard": "node dashboard/server.js",
+    "test:scraper": "node tests/test-scraper.js",
+    "test:tailor": "node tests/test-tailor.js",
+    "test:pipeline": "node tests/test-pipeline.js"
+  },
+  "dependencies": {
+    "csv-writer": "^1.6.0",
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "marked": "^15.0.7",
+    "node-cron": "^3.0.3",
+    "pdf-parse": "^2.4.5",
+    "pdfkit": "^0.16.0",
+    "puppeteer": "^24.9.0"
+  }
+}

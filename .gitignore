@@ -1,0 +1,6 @@
+node_modules/
+.env
+output/resumes/
+output/runs/
+resume/*.pdf
+*.log
