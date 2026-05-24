@@ -1,55 +1,54 @@
 // ─── User Profile for Job Applications ────────────────
-// Fill this out once — used to auto-fill application forms
+// Auto-filled from resume. Edit as needed.
 // Fields marked REQUIRED are needed for most applications
 
 const PROFILE = {
     // ─── Basic Info (REQUIRED) ─────────────────────────
-    firstName: "",
-    lastName: "",
-    email: "",
-    phone: "",
+    firstName: "Siju",
+    lastName: "Saji",
+    email: "lnus4@mail.uc.edu",
+    phone: "+1 (513) 237-9733",
     
     // ─── Location ──────────────────────────────────────
-    city: "",
-    state: "",
-    zipCode: "",
+    city: "Cincinnati",
+    state: "OH",
+    zipCode: "",           // ← FILL THIS IN
     country: "United States",
     
     // ─── Online Presence ───────────────────────────────
-    linkedinUrl: "",
-    githubUrl: "",
-    portfolioUrl: "",
+    linkedinUrl: "",        // ← FILL: your full LinkedIn URL
+    githubUrl: "https://github.com/Ski146",
+    portfolioUrl: "",       // ← FILL if you have one
     
     // ─── Work Authorization ────────────────────────────
-    authorizedToWork: true,      // Are you authorized to work in the US?
-    needsSponsorship: false,      // Do you need visa sponsorship?
+    authorizedToWork: true,
+    needsSponsorship: false,
     
-    // ─── Demographics (optional, for EEO forms) ───────
-    gender: "",                   // "Male", "Female", "Non-Binary", "Prefer not to say"
-    veteranStatus: "I am not a protected veteran",   
-    disabilityStatus: "I don't wish to answer",
-    race: "",                     // "Asian", "White", etc. or "Prefer not to say"
+    // ─── Demographics (for EEO forms) ──────────────────
+    gender: "Male",
+    veteranStatus: "I am not a protected veteran",
+    disabilityStatus: "No, I don't have a disability",
+    race: "Asian",
     
     // ─── Education ─────────────────────────────────────
-    highestDegree: "",            // "Bachelor's", "Master's", etc.
-    university: "",
-    graduationYear: "",
-    major: "",
+    highestDegree: "Master's",
+    university: "University of Cincinnati",
+    graduationYear: "2026",
+    major: "Computer Science",
     
     // ─── Experience ────────────────────────────────────
-    yearsOfExperience: "",
-    currentTitle: "",
-    currentCompany: "",
+    yearsOfExperience: "2",
+    currentTitle: "Graduate Student / Salesforce Developer",
+    currentCompany: "University of Cincinnati",
     
     // ─── Preferences ───────────────────────────────────
-    desiredSalary: "",            // e.g. "120000" or "Negotiable"
-    willingToRelocate: false,
-    preferredWorkType: "Remote",  // "Remote", "Hybrid", "On-site"
-    startDate: "Immediately",     // "Immediately", "2 weeks", specific date
+    desiredSalary: "Negotiable",
+    willingToRelocate: true,
+    preferredWorkType: "Remote",
+    startDate: "Immediately",
     
     // ─── Cover Letter Base ─────────────────────────────
-    // Brief personal pitch — agents will customize per application
-    personalPitch: ""
+    personalPitch: "Data engineering and software specialist graduate student with 2+ years of hands-on experience designing and optimizing ETL pipelines, data warehouses, and cloud-native architectures using Python, SQL, PySpark, DBT, Airflow, and Snowflake. Experienced with AWS, Docker, Kubernetes, and BI tools. Strong background in pipeline orchestration, automation, and data quality testing."
 };
 
 module.exports = PROFILE;

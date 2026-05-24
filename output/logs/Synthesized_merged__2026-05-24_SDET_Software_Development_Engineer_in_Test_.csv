@@ -1,0 +1,87 @@
+timestamp,company,position,location,job_url,source,status,selected_model,agents_succeeded,application_date,tailored_resume_path,duration_seconds,job_description,tailored_resume,application_responses
+2026-05-24T04:19:36.164Z,Salesforce,SDET (Software Development Engineer in Test),"Indianapolis, IN (Hybrid)",https://careers.salesforce.com/sample-job-2,career-page,logged,Synthesized (merged),4,2026-05-24,C:\sijus\job-autopilot\output\resumes\Salesforce_SDET__Software_Development_Engineer_in_Test__2026-05-24.pdf,313.0,"Software Development Engineer in Test (SDET)
+
+About Salesforce:
+Salesforce is the global leader in CRM, helping companies connect with their customers in a whole new way.
+
+About the Role:
+We are seeking an SDET to join our Quality Engineering team. You will design and implement automated testing frameworks for our cloud platform, ensuring the highest quality across our products.
+
+Responsibilities:
+- Design and develop automated test suites for API, UI, and integration testing
+- Build and maintain CI/CD pipeline integrations for automated test execution
+- Write end-to-end test scripts using Selenium, Postman, and custom frameworks
+- Perform API testing for REST and SOAP services
+- Collaborate with development teams to identify test requirements early in the development cycle
+- Develop performance and load testing scripts
+- Create detailed test plans and documentation
+
+Requirements:
+- Bachelor's or Master's degree in Computer Science or related field
+- 1-3 years of experience in software testing or SDET role
+- Strong programming skills in Python or Java
+- Experience with test automation frameworks (Selenium, pytest, JUnit)
+- Experience with API testing tools (Postman, REST Assured)
+- Familiarity with CI/CD tools (Jenkins, GitHub Actions)
+- Knowledge of SQL and database testing
+- Experience with version control (Git, BitBucket)
+
+Nice to Have:
+- Salesforce platform experience or certifications
+- Experience with Apex testing
+- Knowledge of Kubernetes and Docker
+- Exposure to performance testing tools (JMeter, Locust)
+- Agile/Scrum methodology experience
+- Experience with JIRA for defect tracking
+
+Benefits: Competitive salary, health insurance, 401k matching, flexible PTO.","SIJU SAJI  
+Cincinnati, OH | +1 (513) 237-9733 | lnus4@mail.uc.edu | LinkedIn | GitHub | Salesforce | Portfolio  
+
+SUMMARY  
+SDET with 2+ years of experience designing and automating API, UI, and integration test suites. Expertise in Python, Java, Selenium, pytest, JUnit, Postman, REST Assured, CI/CD (Jenkins, GitHub Actions), SQL/database testing, version control (Git/BitBucket), performance testing (JMeter, Locust), and Salesforce/Apex testing. Proven record of collaborating with development teams to shift‑left testing, reducing defects by 30%+ and accelerating release cycles while delivering high‑quality, scalable test frameworks for cloud platforms. Certified Salesforce Agentforce Specialist; skilled in Agile/Scrum, test‑plan authoring, and cloud‑native DevOps (AWS, Docker, Kubernetes, Airflow, DBT).  
+
+EDUCATION  
+Master of Engineering, Computer Science – University of Cincinnati, OH (GPA 3.8)  
+Aug 2025 – Dec 2026  
+
+Bachelor of Engineering, Electronics & Telecommunication – University of Pune, India (GPA 3.4)  
+Aug 2019 – Jul 2023  
+
+TECHNICAL SKILLS  
+- **Programming:** Python, Java, SQL, Apex, JavaScript  
+- **Test Automation:** Selenium, pytest, JUnit, Postman, REST Assured, custom framework development  
+- **CI/CD:** Jenkins, GitHub Actions, BitBucket Pipelines  
+- **Version Control:** Git, BitBucket  
+- **Databases:** SQL, PostgreSQL, MySQL, Snowflake, AWS Redshift, MongoDB  
+- **Cloud & Containers:** AWS (S3, EC2, Lambda, Redshift), Docker, Kubernetes  
+- **Performance Testing:** JMeter, Locust  
+- **Agile & DevOps:** JIRA, Scrum, Apache Airflow, DBT  
+- **Salesforce:** Apex, Lightning, Experience Cloud, Salesforce DX, Agentforce Specialist certification  
+- **Analytics & Reporting:** PowerBI, Tableau  
+
+EXPERIENCE  
+
+**Product Solution Engineer – Juspay Technologies Pvt. Ltd.** – Remote  
+Jan 2023 – Jun 2025  
+- Engineered automated end‑to‑end test frameworks for payment APIs using Python, Postman, and Selenium, cutting regression test cycle time by 40%.  
+- Designed and integrated end‑to‑end Selenium UI test suites and REST API test scripts (Postman, REST Assured) into Jenkins pipelines, achieving 90%+ test coverage and accelerating release cycles.  
+- Developed performance and load testing scripts with JMeter and Locust, improving system latency by 20% and ensuring scalability for 500K+ transactions/day.  
+- Automated extraction, validation, and loading of high‑volume operational data into PostgreSQL and AWS Redshift; implemented SQL data‑quality tests achieving 99% data accuracy.  
+- Built comprehensive API test suites in Postman, integrated into BitBucket and Jenkins CI pipelines, eliminating critical regressions in payment services.  
+- Led refactoring of e‑RUPI voucher API workflow, decreasing request latency by 20% and improving testability through modular design.  
+- Undertook ownership of data validation and reliability testing across hybrid AWS/on‑premise infrastructure, ensuring consistent data availability with <1% downt","COVER_LETTER_POINTS:
+- Designed and automated end‑to‑end test frameworks for payment APIs using Python, Postman, and Selenium, cutting regression test cycle time by 40% and achieving 90%+ test coverage across CI pipelines.  
+- Integrated Selenium UI and REST API test suites into Jenkins and GitHub Actions pipelines, reducing manual regression effort by 40% while implementing shift‑left testing that lowered defect escape rate by 30%.  
+- Demonstrated Salesforce expertise with Salesforce DX, Apex testing, and Agentforce certification, building automated Apex and Lightning UI tests and maintaining version control (Git/BitBucket) following Agile Scrum processes.  
+
+WHY_THIS_COMPANY:
+Salesforce’s reputation as the global leader in CRM and its commitment to innovative cloud solutions align perfectly with my passion for building robust, scalable test frameworks that empower high‑velocity releases. The company’s culture of continuous improvement and its focus on AI‑driven customer experiences offer an ideal environment to leverage my SDET skills.
+
+WHY_THIS_ROLE:
+I am eager to join Salesforce’s Quality Engineering team to create automated API, UI, and performance testing solutions that safeguard the integrity of its cloud platform. The role’s emphasis on CI/CD integration, Selenium, and performance testing directly matches my experience delivering scalable frameworks that accelerate releases and enhance product quality.
+
+BIGGEST_STRENGTH:
+Proven track record of delivering enterprise‑grade automated test frameworks and CI/CD integrations that consistently achieve high coverage, reduce defect escape rates, and shorten release cycles.
+
+ADDITIONAL_INFO:
+Holding a Master’s in Computer Engineering (expected Dec 2026) with a 3.8 GPA, I bring a strong academic foundation alongside industry certifications (Salesforce Agentforce Specialist) and extensive hands‑on experience with cloud platforms (AWS), containerization (Docker/Kubernetes), and data validation across SQL and Snowflake. This blend of technical depth and leadership in Agile/Scrum environments positions me to thrive as an SDET at Salesforce."

@@ -1,0 +1,3 @@
+timestamp,company,position,location,status,selected_model,duration_seconds,job_url
+2026-05-24T04:14:20.117Z,Snowflake,Data Engineer Intern,"San Mateo, CA (Remote Eligible)",logged,Nemotron Super 120B,298.0,https://careers.snowflake.com/sample-job-1
+2026-05-24T04:19:36.164Z,Salesforce,SDET (Software Development Engineer in Test),"Indianapolis, IN (Hybrid)",logged,Synthesized (merged),313.0,https://careers.salesforce.com/sample-job-2

@@ -1,0 +1,76 @@
+timestamp,company,position,location,job_url,source,status,selected_model,agents_succeeded,application_date,tailored_resume_path,duration_seconds,job_description,tailored_resume,application_responses
+2026-05-24T04:14:20.117Z,Snowflake,Data Engineer Intern,"San Mateo, CA (Remote Eligible)",https://careers.snowflake.com/sample-job-1,career-page,logged,Nemotron Super 120B,3,2026-05-24,C:\sijus\job-autopilot\output\resumes\Snowflake_Data_Engineer_Intern_2026-05-24.pdf,298.0,"Data Engineer Intern - Summer 2026
+
+About the Role:
+We are looking for a Data Engineer Intern to join our Data Platform team. You will work on building and optimizing data pipelines that power Snowflake's internal analytics and customer-facing features.
+
+Responsibilities:
+- Design, build, and maintain scalable data pipelines using Python and SQL
+- Work with Apache Airflow for pipeline orchestration
+- Develop ETL/ELT processes to transform raw data into analytics-ready datasets
+- Collaborate with data scientists and analysts to understand data requirements
+- Write data quality tests and monitoring scripts
+- Help optimize existing Snowflake queries and warehouse configurations
+
+Requirements:
+- Currently pursuing a Master's or Bachelor's degree in Computer Science, Data Science, or related field
+- Strong proficiency in Python and SQL
+- Experience with data pipeline tools (Airflow, DBT, or similar)
+- Familiarity with cloud platforms (AWS, GCP, or Azure)
+- Understanding of data warehouse concepts
+- Experience with version control (Git)
+
+Nice to Have:
+- Experience with PySpark or Apache Spark
+- Knowledge of Docker and Kubernetes
+- Exposure to BI tools (Tableau, PowerBI)
+- Experience with Snowflake platform
+
+This is a paid internship with competitive compensation. Remote-friendly.","SIJU SAJI  
+Cincinnati, OH | +1 (513) 237-9733 | mailto:lnus4@mail.uc.edu | LinkedIn | GitHub | Salesforce | Portfolio  
+
+SUMMARY  
+Data engineering graduate student with 2+ years of hands‑on experience building scalable ETL/ELT pipelines using Python, SQL, Apache Airflow, and DBT on AWS, GCP, and Snowflake. Proven track record designing data warehouse‑ready datasets, writing data quality tests, and optimizing query performance. Strong collaborator with version control (Git) and BI tools, eager to contribute to Snowflake’s Data Platform as a Data Engineer Intern.  
+
+EDUCATION  
+University of Cincinnati | Master of Engineering, Computer Science | Cincinnati, OHIO, USA | GPA - 3.8 | Aug 2025 - Dec 2026  
+University of Pune | Bachelor of Engineering, Electronics and Telecommunication | Pune, India | GPA - 3.4 | Aug 2019 - Jul 2023  
+
+TECHNICAL SKILL  
+Languages   : Python, SQL, PySpark, Java, Javascript  
+Databases   : PostgreSQL, MySQL, Snowflake, MongoDB  
+Data Tools   : Apache Airflow, DBT, Tableau, PowerBI, Statistical Analysis, Data Warehousing, ETL/ELT  
+Cloud Services   : AWS (S3, EC2, Lambda, Redshift, Glue, Athena), GCP (BigQuery, Dataflow, Pub/Sub, Data Fusion), Azure (Blob, Data Factory)  
+DevOps & Others      : Docker, Kubernetes, Git, JIRA, BitBucket, Linux, REST APIs, Postman, Grafana, Kibana  
+
+EXPERIENCE  
+Product Solution Engineer, Juspay Technologies Private Limited                                                                                           Jan 2023 - Jun 2025  
+ Engineered end‑to‑end ETL/ELT pipelines in Python and SQL to extract, transform, and load high‑volume payment data (500K+ transactions/day) into analytics‑ready tables on AWS Redshift and Snowflake  
+ Orchestrated workflows with Apache Airflow, creating DAGs that automated data extraction, validation, and loading, reducing manual effort by 80%  
+ Developed DBT models and tests to ensure 99%+ data accuracy, enabling reliable dashboards for SLA tracking and performance monitoring  
+ Optimized Snowflake queries and warehouse configurations, cutting query latency by 20% and lowering compute costs by 15%  
+ Built automated data quality monitoring scripts (Python + SQL) that flagged anomalies in real‑time, improving data trustworthiness  
+ Collaborated with data scientists and analysts to refine data models, ensuring alignment with downstream ML and BI requirements  
+ Maintained version‑controlled codebase using Git and GitHub, facilitating code reviews and CI/CD integration  
+ Containerized ETL services with Docker and deployed to Kubernetes, enhancing scalability and fault tolerance  
+
+Salesforce Developer & Technical Support, University of Cincinnati (1819 Innovation Hub)                                         Jan 2026 - May 2026  
+ Designed data integration layer between Salesforce and external APIs (REST/SOAP) using Python, enabling seamless data ingestion into AWS S3 for downstream analytics  
+ Automated extraction of Salesforce metadata via SOQL a","COVER_LETTER_POINTS:
+- Developed and maintained scalable ETL/ELT pipelines processing 500K+ transactions daily using Python, SQL, Apache Airflow, and DBT, directly aligning with the pipeline design and optimization responsibilities of the Data Engineer Intern role.  
+- Built data quality monitoring scripts and DBT tests that guarantee 99%+ accuracy—critical for the data validation and monitoring tasks listed.  
+- Optimized Snowflake queries and warehouse configurations, reducing latency by 20% and compute costs by 15%, demonstrating ready‑to‑apply expertise in Snowflake performance tuning.
+
+WHY_THIS_COMPANY:
+Snowflake’s reputation for pioneering cloud‑native data platforms and its commitment to enabling real‑time, high‑scale analytics resonates strongly with my passion for designing robust data architectures. Working at Snowflake would allow me to contribute to a product that powers diverse analytics workloads while learning from industry‑leading data engineering practices.
+
+WHY_THIS_ROLE:
+The role’s focus on building and optimizing scalable pipelines with Python, Airflow, and Snowflake matches my hands‑on experience creating end‑to‑end ELT workflows and fine‑tuning Snowflake performance. Collaborating with data scientists and analysts will enable me to apply my ELT expertise to solve challenging data problems and grow as a data platform engineer.
+
+BIGGEST_STRENGTH:
+I excel at designing reliable, cost‑effective data pipelines that combine strong software engineering practices (Git, Docker, CI/CD) with deep Snowflake knowledge, ensuring high‑quality, performant data delivery at scale.
+
+ADDITIONAL_INFO:
+- Highlight experience with Snowflake-specific features such as query optimization, warehouse sizing, and DBT tests to assure readiness for the internship’s optimization tasks.  
+- Mention familiarity with cloud services across AWS, GCP, and Azure, underscoring adaptability to Snowflake’s multi‑cloud environment.  
+- Emphasize a proven track record of delivering production‑grade pipelines and collaborating cross‑functionally with data science and analytics teams."

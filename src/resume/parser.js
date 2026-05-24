@@ -3,7 +3,7 @@
 
 const fs = require("fs");
 const path = require("path");
-const pdfParse = require("pdf-parse");
+const { PDFParse } = require("pdf-parse");
 
 /**
  * Parse a resume PDF file into structured text
@@ -16,6 +16,7 @@ async function parseResume(pdfPath) {
     }
 
     const dataBuffer = fs.readFileSync(pdfPath);
+    const pdfParse = require("pdf-parse");
     const pdfData = await pdfParse(dataBuffer);
 
     const raw = pdfData.text || "";
