@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Job Autopilot — Manager Dashboard for monitoring automated job applications">
+    <title>Job Autopilot — Dashboard</title>
+    <link rel="stylesheet" href="/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+</head>
+<body>
+    <!-- ─── Sidebar ──────────────────────────────────── -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-brand">
+            <div class="brand-icon">🚀</div>
+            <div class="brand-text">
+                <h1>Job Autopilot</h1>
+                <p>LLM Council</p>
+            </div>
+        </div>
+
+        <nav class="sidebar-nav">
+            <a href="#" class="nav-item active" data-view="overview" id="nav-overview">
+                <span class="nav-icon">📊</span>
+                <span>Overview</span>
+            </a>
+            <a href="#" class="nav-item" data-view="applications" id="nav-applications">
+                <span class="nav-icon">📋</span>
+                <span>Applications</span>
+            </a>
+            <a href="#" class="nav-item" data-view="runs" id="nav-runs">
+                <span class="nav-icon">⚡</span>
+                <span>Run History</span>
+            </a>
+            <a href="#" class="nav-item" data-view="models" id="nav-models">
+                <span class="nav-icon">🤖</span>
+                <span>Model Stats</span>
+            </a>
+            <a href="#" class="nav-item" data-view="logs" id="nav-logs">
+                <span class="nav-icon">📁</span>
+                <span>CSV Logs</span>
+            </a>
+        </nav>
+
+        <div class="sidebar-footer">
+            <div class="pipeline-status" id="pipeline-status">
+                <div class="status-indicator idle"></div>
+                <span>Idle</span>
+            </div>
+            <button class="btn-trigger" id="btn-trigger" type="button">
+                <span>▶</span> Run Now
+            </button>
+        </div>
+    </aside>
+
+    <!-- ─── Main Content ─────────────────────────────── -->
+    <main class="main-content">
+        <!-- ─── Top Bar ──────────────────────────────── -->
+        <header class="top-bar" id="top-bar">
+            <div class="top-bar-left">
+                <h2 id="page-title">Overview</h2>
+                <span class="top-bar-subtitle" id="page-subtitle">Today's application summary</span>
+            </div>
+            <div class="top-bar-right">
+                <div class="next-run" id="next-run-display">
+                    <span class="next-run-label">Next Run:</span>
+                    <span class="next-run-time" id="next-run-time">—</span>
+                </div>
+                <div class="date-display" id="date-display"></div>
+            </div>
+        </header>
+
+        <!-- ─── Overview View ────────────────────────── -->
+        <section class="view active" id="view-overview">
+            <!-- Hero Stats -->
+            <div class="stats-grid" id="stats-grid">
+                <div class="stat-card hero" id="stat-total">
+                    <div class="stat-icon">📨</div>
+                    <div class="stat-value" id="stat-total-value">0</div>
+                    <div class="stat-label">Applications Today</div>
+                    <div class="stat-trend" id="stat-total-trend"></div>
+                </div>
+                <div class="stat-card success" id="stat-success">
+                    <div class="stat-icon">✅</div>
+                    <div class="stat-value" id="stat-success-value">0</div>
+                    <div class="stat-label">Succeeded</div>
+                </div>
+                <div class="stat-card danger" id="stat-failed">
+                    <div class="stat-icon">❌</div>
+                    <div class="stat-value" id="stat-failed-value">0</div>
+                    <div class="stat-label">Failed</div>
+                </div>
+                <div class="stat-card info" id="stat-rate">
+                    <div class="stat-icon">📈</div>
+                    <div class="stat-value" id="stat-rate-value">0%</div>
+                    <div class="stat-label">Success Rate</div>
+                </div>
+                <div class="stat-card neutral" id="stat-runs">
+                    <div class="stat-icon">⚡</div>
+                    <div class="stat-value" id="stat-runs-value">0</div>
+                    <div class="stat-label">Runs Today</div>
+                </div>
+            </div>
+
+            <!-- Positions Being Tracked -->
+            <div class="panel" id="positions-panel">
+                <div class="panel-header">
+                    <h3>🎯 Target Positions</h3>
+                </div>
+                <div class="positions-list" id="positions-list"></div>
+            </div>
+
+            <!-- Recent Applications -->
+            <div class="panel" id="recent-panel">
+                <div class="panel-header">
+                    <h3>📋 Recent Applications</h3>
+                    <button class="btn-sm" id="btn-view-all">View All →</button>
+                </div>
+                <div class="table-wrapper">
+                    <table class="data-table" id="recent-table">
+                        <thead>
+                            <tr>
+                                <th>Company</th>
+                                <th>Position</th>
+                                <th>Location</th>
+                                <th>Status</th>
+                                <th>Model</th>
+                                <th>Time</th>
+                            </tr>
+                        </thead>
+                        <tbody id="recent-table-body"></tbody>
+                    </table>
+                    <div class="table-empty" id="recent-empty" style="display:none;">
+                        <div class="empty-icon">📭</div>
+                        <p>No applications yet today. Pipeline runs daily at 10:00 AM.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Daily Chart -->
+            <div class="panel" id="chart-panel">
+                <div class="panel-header">
+                    <h3>📊 Daily Applications (Last 14 Days)</h3>
+                </div>
+                <div class="chart-container" id="chart-container"></div>
+            </div>
+        </section>
+
+        <!-- ─── Applications View ────────────────────── -->
+        <section class="view" id="view-applications">
+            <div class="panel">
+                <div class="panel-header">
+                    <h3>📋 All Applications</h3>
+                    <div class="filter-bar">
+                        <input type="text" class="filter-input" id="app-search" placeholder="Search company or position...">
+                        <select class="filter-select" id="app-status-filter">
+                            <option value="">All Statuses</option>
+                            <option value="logged">Logged</option>
+                            <option value="failed">Failed</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="table-wrapper">
+                    <table class="data-table" id="applications-table">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Company</th>
+                                <th>Position</th>
+                                <th>Location</th>
+                                <th>Status</th>
+                                <th>Model Used</th>
+                                <th>Duration</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="applications-table-body"></tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- ─── Runs View ────────────────────────────── -->
+        <section class="view" id="view-runs">
+            <div class="panel">
+                <div class="panel-header">
+                    <h3>⚡ Run History</h3>
+                </div>
+                <div class="runs-list" id="runs-list"></div>
+            </div>
+        </section>
+
+        <!-- ─── Model Stats View ─────────────────────── -->
+        <section class="view" id="view-models">
+            <div class="panel">
+                <div class="panel-header">
+                    <h3>🤖 Model Performance</h3>
+                    <p class="panel-subtitle">Which models produce the best tailored resumes</p>
+                </div>
+                <div class="models-grid" id="models-grid"></div>
+            </div>
+        </section>
+
+        <!-- ─── Logs View ────────────────────────────── -->
+        <section class="view" id="view-logs">
+            <div class="panel">
+                <div class="panel-header">
+                    <h3>📁 CSV Log Files</h3>
+                </div>
+                <div class="logs-list" id="logs-list"></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ─── Application Detail Modal ─────────────────── -->
+    <div class="modal-overlay" id="modal-overlay">
+        <div class="modal" id="detail-modal">
+            <div class="modal-header">
+                <h3 id="modal-title">Application Detail</h3>
+                <button class="modal-close" id="modal-close">×</button>
+            </div>
+            <div class="modal-body" id="modal-body"></div>
+        </div>
+    </div>
+
+    <script src="/index.js"></script>
+</body>
+</html>
